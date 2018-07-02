@@ -1,0 +1,31 @@
+{
+  "name": "hear-me-type-tutorial",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/jeremymcwilliams/hear-me-type-tutorial",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Jeremy McWilliams",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "csv-parse": "^2.5.0",
+    "dialog": "^0.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "remote": "^0.2.6",
+    "xml2js": "^0.4.19"
+  }
+}
