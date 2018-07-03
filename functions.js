@@ -1,5 +1,3 @@
-
-
 $("#settings").click(function(){
 
   $(".jumbotron").load("templates/settings.html");
