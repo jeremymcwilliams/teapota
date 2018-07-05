@@ -1,4 +1,4 @@
-# electron-quick-start
+# Tea-Pot-A
 
 **Clone and run for a quick way to see Electron in action.**
 

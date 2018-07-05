@@ -23,7 +23,9 @@
     "bootstrap": "^4.1.1",
     "csv-parse": "^2.5.0",
     "dialog": "^0.3.1",
+    "electron-json-storage": "^4.1.0",
     "jquery": "^3.3.1",
+    "pdfkit": "^0.8.3",
     "popper.js": "^1.14.3",
     "remote": "^0.2.6",
     "xml2js": "^0.4.19"

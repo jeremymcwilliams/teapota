@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <!--<link href="css/logo-nav.css" rel="stylesheet">-->
@@ -53,7 +54,7 @@
     <!-- Page Content -->
 
     <div class="container">
-      <h1 class="mt-5">Tea-Pot-A</h1>
+
 
 <div class='jumbotron'>
 </div>
@@ -88,10 +89,23 @@
       const fs= require('fs');
       var parse = require('csv-parse');
     //  const remote = require('remote');
+    const os = require('os');
+    const storage = require('electron-json-storage');
+
+    storage.setDataPath(os.tmpdir());
 
     if (window.module) module = window.module;
 
 
+    const dataPath = storage.getDataPath();
+    console.log(dataPath);
+
+
+    storage.get('itemPolicies', function(error, data) {
+      if (error) throw error;
+
+      console.log(data);
+    });
     </script>
   </body>
 
