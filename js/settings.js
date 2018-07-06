@@ -8,7 +8,12 @@ storage.has('itemPolicies', function(error, hasKey) {
   }
 });
 
+storage.get('apikey', function(error, data) {
+  if (error) throw error;
+  $("#apikey").val(data.apikey);
 
+  console.log(data);
+});
 
 
 
@@ -18,7 +23,28 @@ storage.has('itemPolicies', function(error, hasKey) {
 $("#sub").click(function(){
 
   console.log("sub");
+
+  var apikey=$("#apikey").val();
+  console.log(apikey)
+  setApiKey(apikey);
+
+
 });
+
+
+function setApiKey(apikey){
+  storage.set('apikey',
+    {"apikey": apikey}
+  , function(error) {
+    if (error) throw error;
+  });
+
+
+
+
+}
+
+
 /*
 storage.set('itemPolicies', {
   "policies": [{
