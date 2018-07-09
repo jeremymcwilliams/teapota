@@ -56,7 +56,7 @@
     <div class="container">
 
 
-<div class='jumbotron'>
+<div class='jumbotronz'>
 </div>
 
 
@@ -91,16 +91,26 @@
     //  const remote = require('remote');
     const os = require('os');
     const storage = require('electron-json-storage');
+    var loc = window.location.pathname;
+    var dir = loc.substring(0, loc.lastIndexOf('/'));
 
-    storage.setDataPath(os.tmpdir());
-
-    if (window.module) module = window.module;
+    console.log(loc);
+    console.log(dir);
+    storage.setDataPath(dir+"/jsonstorage");
 
 
     const dataPath = storage.getDataPath();
     console.log(dataPath);
+  //  storage.setDataPath("./jsonstorage");
 
 
+
+    if (window.module) module = window.module;
+
+/*
+    const dataPath = storage.getDataPath();
+    console.log(dataPath);
+*/
     storage.get('apikey', function(error, data) {
       if (error) throw error;
 

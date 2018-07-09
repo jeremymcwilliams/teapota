@@ -1,16 +1,16 @@
 $("#settings").click(function(){
 
-  $(".jumbotron").load("templates/settings.html");
+  $(".jumbotronz").load("templates/settings.html");
 
 });
 
 $("#upload").click(function(){
 
-  $(".jumbotron").load("templates/upload.html");
+  $(".jumbotronz").load("templates/upload.html");
 
 });
 
 $(".home").click(function(){
-  $(".jumbotron").load("templates/home.html");
+  $(".jumbotronz").load("templates/home.html");
 
 });

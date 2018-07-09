@@ -5,6 +5,15 @@ storage.has('itemPolicies', function(error, hasKey) {
 
   if (hasKey) {
     console.log('there are item policies!');
+    storage.get('itemPolicies', function(error, data){
+      if (error) throw error;
+      $("#ipArea").html(data);
+      console.log(data);
+
+
+    });
+
+
   }
 });
 

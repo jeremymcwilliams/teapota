@@ -1,13 +1,127 @@
+
+<h2>Settings</h2>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Alma Settings</h5>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Alma API Key</label>
+          <input type="text" class="form-control" id="apikey" aria-describedby="emailHelp" placeholder="Enter Alma API Key (Bibs, write-enabled, production)">
+          <small id="emailHelp" class="form-text text-muted">How to get API key here.</small>
+        </div>
+        <div class="form-group">
+          <label for="barcodePrefix">Barcode Prefix</label>
+          <input size="4" type="text" class="form-control" id="barcodePrefix" aria-describedby="barcodePrefixHelp" placeholder="1234">
+          <small id="barcodePrefixHelp" class="form-text text-muted">The first 4 digits of item barcodes created in Alma.</small>
+        </div>
+
+        <div class="form-group" id="itemPolicies">
+          <label for="itemPolicies">Item Policies</label>
+          <div id="ipArea"></div>
+          <div><a>Add Item Policy</a></div>
+
+        </div>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+      </div>
+
+
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Label Options</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+        <div class="form-group">
+          <label for="labelHeader">Label Header</label>
+          <input type="text" class="form-control" id="labelHeader" aria-describedby="labelHeaderHelp" placeholder="Bold text at top of label">
+          <small id="labelHeaderHelp" class="form-text text-muted">How to get API key here.</small>
+        </div>
+
+
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div  >
   <h3>Settings</h3>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Alma API Key</label>
-    <input type="text" class="form-control" id="apikey" aria-describedby="emailHelp" placeholder="Enter Alma API Key (Bibs, write-enabled, production)">
-    <small id="emailHelp" class="form-text text-muted">How to get API key here.</small>
+
+
+
+  <!-- item policies -->
+
+
+<hr>
+
+<div class="card">
+  <div class="card-header">
+    Alma-related settings
   </div>
+  <div class="card-body">
+    <h5 class="card-title">Alma Settings</h5>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Alma API Key</label>
+      <input type="text" class="form-control" id="apikey" aria-describedby="emailHelp" placeholder="Enter Alma API Key (Bibs, write-enabled, production)">
+      <small id="emailHelp" class="form-text text-muted">How to get API key here.</small>
+    </div>
+    <div class="form-group">
+      <label for="barcodePrefix">Barcode Prefix</label>
+      <input size="4" type="text" class="form-control" id="barcodePrefix" aria-describedby="barcodePrefixHelp" placeholder="1234">
+      <small id="barcodePrefixHelp" class="form-text text-muted">The first 4 digits of item barcodes created in Alma.</small>
+    </div>
+
+    <div class="form-group" id="itemPolicies">
+      <label for="itemPolicies">Item Policies</label>
+      <div id="ipArea"></div>
+      <div><a>Add Item Policy</a></div>
+
+    </div>
 
 
-  <button type="submit" class="btn btn-primary" id="sub">Submit</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+Label Options
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+
+
+    <div class="form-group">
+      <label for="labelHeader">Label Header</label>
+      <input type="text" class="form-control" id="labelHeader" aria-describedby="labelHeaderHelp" placeholder="Bold text at top of label">
+      <small id="labelHeaderHelp" class="form-text text-muted">How to get API key here.</small>
+    </div>
+
+    <p>Label Header: <input type='text' name='labelHeader' id='labelHeader' size="50" value='Watzek Interlibrary Loan'><span class='alert'>*</span> </p>
+    <p>Label Institution: <input type='text' name='labelInst' id='labelInst' size="50" value='Lewis & Clark College'><span class='alert'>*</span> </p>
+    <p>Label EMail: <input type='text'  name='labelEmail' id='labelEmail' size="50" value='ill@lclark.edu'><span class='alert'>*</span> </p>
+    <p>Label Fines Line 1: <input type='text' name='labelFinesLine1' id='labelFinesLine1' size="50" value='First 10 days: 50 cents/day'><span class='alert'>*</span> </p>
+    <p>Label Fines Line 2: <input type='text' name='labelFinesLine2' id='labelFinesLine2' size="50" value='Next 15 days: $1/day'><span class='alert'>*</span> </p>
+    <p>Label Fines Line 3: <input type='text' name='labelFinesLine3' id='labelFinesLine3' size="50" value='Replacement charge determined by lending library'><span class='alert'>*</span> </p>
+    <button type="submit" class="btn btn-primary" id="sub">Submit</button>
+
+
+  </div>
+</div>
+
+
+  <h5>Label Options</h5>
+
 </div>
 
 
